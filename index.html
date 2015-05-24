@@ -52,33 +52,33 @@
    <div class="layout">
   <div class="wrap">
     <div class="layout__content--brands">
-         <img class="fast-lane-logo" src="assets/img/logo-desktop-large.png" alt="">
-         <h2 class="fastlane-intro">
-            Spaceship allows you to easily interact with the resources provided on the Apple Developer Portal. This includes fetching, updating and creating App IDs, Provisioning Profiles and Certificates.
-         </h2>
+       <img class="fast-lane-logo" src="assets/img/logo-desktop-large.png" alt="">
+       <h2 class="fastlane-intro">
+          Spaceship allows you to easily interact with the resources provided on the Apple Developer Portal. This includes fetching, updating and creating App IDs, Provisioning Profiles and Certificates.
+       </h2>
     </div>
   </div>
 </div>
 
-  <div class="layout">
+  <div class="layout" style="margin-top: -70px">
     <div class="wrap">
       <div class="layout__content features-padding">
         <div class="content content__half content--padded-double ">
           <div class="content--fastlane-features">
 
             <div class="feature">
-              <div class="feature__icon"><img src="assets/img/featureicons/connect.svg" height="48" width="48" alt=""></div>
+              <div class="feature__icon"><img src="assets/img/featureicons/deploy.svg" height="48" width="48" alt=""></div>
 
               <div class="feature__text">Blazing fast communication using only a HTTP client</div>
             </div>
 
             <div class="feature">
-              <div class="feature__icon"><img src="assets/img/featureicons/lanes.svg" height="48" width="48" alt=""></div>
+              <div class="feature__icon"><img src="assets/img/featureicons/extend.svg" height="48" width="48" alt=""></div>
               <div class="feature__text">Object oriented access to all resources</div>
             </div>
 
             <div class="feature">
-              <div class="feature__icon"><img src="assets/img/featureicons/jenkins.svg" height="48" width="48" alt=""></div>
+              <div class="feature__icon"><img src="assets/img/featureicons/connect.svg" height="48" width="48" alt=""></div>
               <div class="feature__text">Resistant against design changes of the Dev Portal</div>
             </div>
           </div>
@@ -87,7 +87,7 @@
         <div class="content content__half  content--padded-double">
 
             <div class="feature">
-              <div class="feature__icon"><img src="assets/img/featureicons/connect.svg" height="48" width="48" alt=""></div>
+              <div class="feature__icon"><img src="assets/img/featureicons/share.svg" height="48" width="48" alt=""></div>
 
               <div class="feature__text text--oneline">One central tool for the communication</div>
             </div>
@@ -103,6 +103,32 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="wrap" style="margin-top: -60px">
+      <div class="layout__content">
+      <h2>Example spaceship code</h2>
+
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #ccc;border-width:0 0 0 5px;padding:.5em .6em; margin-top: 30px"><pre style="margin: 0; line-height: 125%">Spaceship.login
+ 
+<span style="color: #008000"># Create a new app</span>
+app = <span style="color: #a31515">Spaceship</span>:<span style="color: #a31515">:App</span>.create!(bundle_id: <span style="color: #a31515">&quot;com.krausefx.app_name&quot;</span>, name: <span style="color: #a31515">&quot;Spaceship App&quot;</span>)
+ 
+<span style="color: #008000"># Use an existing certificate</span>
+cert = <span style="color: #a31515">Spaceship</span>:<span style="color: #a31515">:Certificate</span>::Production.all.first
+ 
+<span style="color: #008000"># Create a new provisioning profile</span>
+profile = <span style="color: #a31515">Spaceship</span>:<span style="color: #a31515">:ProvisioningProfile</span>::AppStore.create!(bundle_id: app.bundle_id,
+                                                         certificate: cert)
+ 
+<span style="color: #008000"># Print the name and download the new profile</span>
+puts <span style="color: #a31515">&quot;Created Profile &quot;</span> + profile.name
+profile.download
+</pre></div>
+
       </div>
     </div>
   </div>
@@ -123,13 +149,23 @@
     </div>
   </div>
 
+  <div class="layout">
+    <div class="wrap" style="margin-bottom: 50px">
+      <div class="layout__content">
+        <h3 style="margin-bottom: 10px">This project was kindly sponsored by <a href="https://zeropush.com" target="_blank">ZeroPush</a>.</h3> 
+        <p>Stop reinventing the wheel and let <a href="https://zeropush.com" target="_blank">ZeroPush</a> handle your push notifications.</p>
+        <p>A list of all contributors can be found on <a href="https://github.com/fastlane/spaceship" target="_blank">GitHub</a>.</p>
+      </div>
+    </div>
+  </div>
+
 
   <div class="layout layout--start">
     <div class="wrap ">
       <div class="layout__content--start">
 
         <div class="hero__content">
-          <h2 class="hero__subtitle">Get started with spaceship today</h2>
+          <h2 class="hero__subtitle" style="margin-bottom: -20px">Get started with spaceship today</h2>
           <a class="btn btn--white" href="https://github.com/fastlane/spaceship" target="_blank">Open on GitHub</a>
         </div>
 
@@ -137,7 +173,7 @@
     </div>
   </div>
 
-  <footer>
+  <footer style="margin-top: -50px">
       <div class="layout">
     <div class="wrap">
       <div class="layout__content">
