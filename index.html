@@ -115,13 +115,13 @@
 <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid #ccc;border-width:0 0 0 5px;padding:.5em .6em; margin-top: 30px"><pre style="margin: 0; line-height: 125%">Spaceship.login
  
 <span style="color: #008000"># Create a new app</span>
-app = <span style="color: #a31515">Spaceship</span>:<span style="color: #a31515">:App</span>.create!(bundle_id: <span style="color: #a31515">&quot;com.krausefx.app_name&quot;</span>, name: <span style="color: #a31515">&quot;Spaceship App&quot;</span>)
+app = <span style="color: #a31515">Spaceship</span>.app</span>.create!(bundle_id: <span style="color: #a31515">&quot;com.krausefx.app_name&quot;</span>, name: <span style="color: #a31515">&quot;Spaceship App&quot;</span>)
  
 <span style="color: #008000"># Use an existing certificate</span>
-cert = <span style="color: #a31515">Spaceship</span>:<span style="color: #a31515">:Certificate</span>::Production.all.first
+cert = <span style="color: #a31515">Spaceship</span>.certificate.production.all.first
  
 <span style="color: #008000"># Create a new provisioning profile</span>
-profile = <span style="color: #a31515">Spaceship</span>:<span style="color: #a31515">:ProvisioningProfile</span>::AppStore.create!(bundle_id: app.bundle_id,
+profile = <span style="color: #a31515">Spaceship</span>.provisioning_profile.app_store.create!(bundle_id: app.bundle_id,
                                                          certificate: cert)
  
 <span style="color: #008000"># Print the name and download the new profile</span>
