@@ -2234,7 +2234,7 @@ code {
 
 /* line 1, ../sass/layouts/_layoutStart.scss */
 .layout--start {
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/hero.jpg?v=5");
   background-size: cover;
   background-position: center;
 }
