@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/main.css?v=5" />
   <link rel="icon" stype="image/png" href="assets/img/favicon.ico">
 </head>
-<body>
+<body onscroll="didScroll()">
 
   <header class="site-header">
     <div class="wrap">
@@ -153,14 +153,23 @@ profile.download
 
   <div class="layout">
     <div class="wrap" style="margin-bottom: 50px">
-      <div class="layout__content">
+      <div class="layout__content" style="height: 550px">
         <h2 style="margin-bottom: 20px;">Speed difference in 
           <a href="https://github.com/KrauseFx/sigh">sigh</a>
         </h2>
 
         <img src="assets/img/SpaceshipRecording.gif" 
-            style="width: 100%;" />
+            style="width: 100%; display: none;" id="awesomeGif" />
       </div>
+      <script type="text/javascript">
+        function didScroll() {
+          var top  = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (top > 1100) { // yes
+            document.getElementById("awesomeGif").style.display = "block"
+          }
+        }
+      </script>
     </div>
   </div>
 
