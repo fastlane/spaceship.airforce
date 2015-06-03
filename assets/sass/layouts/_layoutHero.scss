@@ -1,8 +1,11 @@
 .layout--hero {
-  height:60%;
-  background-image:url("../img/hero.jpg?v=5");
+  
+  background-image:url("../img/hero.jpg?v=6");
   background-size: cover;
-
+  height: 50%;
+  @include mq($from:macro-small) {
+    height:60%;
+  }
 }
 
 

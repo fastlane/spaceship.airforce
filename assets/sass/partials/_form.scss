@@ -23,7 +23,13 @@ cursor: text;
 
 input[type="submit"] {
   background-color: #29C590;
-  width: 30%;
+  
+
+  width: 40%;
+  @include mq($from:macro-small) {
+	width: 30%;
+  }
+
   border: 2px solid rgba(0, 0, 0, 0.05);
   color: white;
   font-weight: 600;

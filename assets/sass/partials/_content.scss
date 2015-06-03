@@ -58,7 +58,7 @@
 }
 
 .content--fastlane-features {
-  padding-top: 24px;
+  
   @include mq($from:macro-small) {
     padding-top: 0px;
     @include span(4 of 5 first);
