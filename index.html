@@ -83,7 +83,7 @@
 
             <div class="feature">
               <div class="feature__icon"><img src="assets/img/featureicons/connect.svg" height="48" width="48" alt=""></div>
-              <div class="feature__text">Resistant against design changes of the Dev Portal</div>
+              <div class="feature__text">Resistant against front-end design changes of the Dev Portal</div>
             </div>
    
 
@@ -161,19 +161,64 @@ profile.download
           <a href="https://github.com/KrauseFx/sigh">sigh</a>
         </h2>
 
-        <a href="assets/img/SpaceshipRecording.gif"><img src="assets/img/SpaceshipRecording.gif" 
-            style="width: 100%; display: none;" id="awesomeGif" /></a>
+        <div style="width: 100%; text-align: center;">
+            <img src="assets/img/SpaceshipRecording.gif" 
+              style="display: none;" id="awesomeGif" />
+        </div>
       </div>
       <script type="text/javascript">
         function didScroll() {
           var top  = window.pageYOffset || document.documentElement.scrollTop;
           if (top > 1100) { // yes
-            document.getElementById("awesomeGif").style.display = "block"
+            document.getElementById("awesomeGif").style.display = "inline-block"
           }
         }
       </script>
     </div>
   </div>
+
+  <div class="layout">
+    <div class="wrap" style="margin-bottom: 50px">
+      <div class="layout__content">
+        <h2 style="font-size: 150%">Introducing spaceship</h2> 
+        <p style="color: #AAA; margin-bottom: 10px">2015-06-04</p>
+        <p>Up until now <a href="https://fastlane.tools" target="_blank">fastlane tools</a> made use of front-end web scraping. This means, the tools used a headless web browser to interact with the Apple Developer Portal and iTunes Connect. While this is an easy solution to get started, I quickly ran into the limits of web scraping.<br />
+        More and more issues were caused by this technique: The tools were slow and the users got random timeout errors. When using web scraping, the tools would immediately break after front-end design changes of the websites.</p>
+        <h2 style="font-size: 120%; margin-top: 15px">Upgrading fastlane</h2> 
+        <p>It was time to implement a better solution: By replacing the headless web browser with a plain HTTP client it was possible to speed up <a href="https://github.com/KrauseFx/sigh" target="_blank">sigh</a> by 90% and make it much more stable at the same time. <br />
+        This allowed us to stub all HTTP requests to write tests and detect newly introduced errors faster.</p>
+        <h2 style="font-size: 120%; margin-top: 15px">What is spaceship?</h2>
+        <p>Instead of implementing the HTTP client right into the individual tools, I decided to separate the communication layer and put it into its own reusable Ruby gem. This allows every developer to make use of it. <br />
+        <h2 style="font-size: 120%; margin-top: 15px">spaceship is like Core Data for your Dev Center resources</h2>
+        <p>You don't care about the communication and how it works. You can simply interact with Ruby objects (e.g. <i>App</i>, <i>Certificate</i>, ...) and the changes will automatically be pushed to the Dev Center.
+        </p>
+        <h2 style="font-size: 120%; margin-top: 15px">How can I get started?</h2>
+        <p>There is a pre-release version of <a href="https://github.com/KrauseFx/sigh" target="_blank">sigh</a> available to try, check out the <a href="https://github.com/KrauseFx/sigh/releases/tag/1.0.0.beta5" target="_blank">announcement</a> to upgrade.<br />
+        If you want to try spaceship directly, check out the <a href="https://github.com/fastlane/spaceship">spaceship Project page</a> with a very easy to follow documentation on how to use it. You'll have to install spaceship first before you can start <i>irb</i> (Interactive Ruby Shell).</p>
+        <h2 style="font-size: 120%; margin-top: 15px">What's next?</h2>
+        <p>The current plan is to migrate all <a href="https://fastlane.tools" target="_blank">fastlane tools</a> to make use of spaceship. In the long term, spaceship will also implement the iTunes Connect JSON API (which is already documented <a href="https://github.com/fastlane/itc-api-docs">on GitHub</a>).
+        </p>
+        <style type="text/css">
+          #moreInfo {
+            margin-top: 15px;
+          }
+          #moreInfo > li {
+            margin-left: 30px;
+          }
+        </style>
+        <h2 style="font-size: 120%; margin-top: 15px">Where can I get more information?</h2>
+        <ul id="moreInfo">
+          <li><a href="https://github.com/krausefx/spaceship#usage" target="_blank">Usage</a></li>
+          <li><a href="https://github.com/krausefx/spaceship#http-client" target="_blank">Why an HTTP client?</a></li>
+          <li><a href="https://github.com/krausefx/spaceship#api-endpoints" target="_blank">What API endpoints are used?</a></li>
+          <li><a href="https://github.com/krausefx/spaceship#magic-involved" target="_blank">What kind of magic happens under the hood?</a></li>
+          <li><a href="https://github.com/KrauseFx/sigh/releases/tag/1.0.0.beta5" target="_blank">sigh Beta</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
 
   <div class="layout">
     <div class="wrap" style="margin-bottom: 50px">
