@@ -5,7 +5,7 @@
 }
 
 .feature__icon {
-  @include span(3 of 12 first);
+  @include span(2 of 12 first);
 }
 
 .text--oneline {
@@ -14,7 +14,7 @@
 }
 
 .feature__text {
-  @include span(9 of 12 last);
+  @include span(10 of 12 last);
   font-size: 18px;
     @include mq($to:macro-medium) {
       line-height: 18px;

@@ -651,7 +651,7 @@ textarea:focus {
 \*------------------------------------*/
 /*
  * 'rem' is a Sass mixin that converts pixel values to rem values for whatever property is passed to it.
- * It returns two lines of code ÔÇö one of the regular pixel values (for IE), and another with the
+ * It returns two lines of code — one of the regular pixel values (for IE), and another with the
  * converted rem values (for everyone else).
  *
  * This mixin expects $properties to be a Sass map
@@ -1603,7 +1603,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.4/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .brands:after {
   content: " ";
   display: block;
@@ -1910,7 +1910,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.4/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .feature:after {
   content: " ";
   display: block;
@@ -1919,7 +1919,7 @@ code {
 
 /* line 7, ../sass/objects/_feature.scss */
 .feature__icon {
-  width: 23%;
+  width: 14.66667%;
   float: left;
   margin-left: 1%;
   margin-right: 1%;
@@ -1932,7 +1932,7 @@ code {
 
 /* line 16, ../sass/objects/_feature.scss */
 .feature__text {
-  width: 73.0%;
+  width: 81.33333%;
   float: right;
   margin-left: 1%;
   margin-right: 1%;
@@ -2038,7 +2038,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.4/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .tools:after {
   content: " ";
   display: block;
@@ -2053,7 +2053,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.4/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .tool-feature:after {
   content: " ";
   display: block;
@@ -2548,7 +2548,7 @@ input[type="submit"] {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../.rvm/gems/ruby-2.1.4/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .wrap:after {
   content: " ";
   display: block;
