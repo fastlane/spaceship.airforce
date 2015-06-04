@@ -1781,7 +1781,8 @@ p {
 .fast-lane-logo {
   margin-left: auto;
   margin-right: auto;
-  width: 330px;
+  margin-bottom: 24px;
+  width: 300px;
 }
 @media all and (min-width: 30em) {
   /* line 140, ../sass/objects/_brand.scss */
@@ -2149,21 +2150,31 @@ code {
   background-color: #F7FBFC;
   border-radius: 8px;
 }
+/* line 11, ../sass/layouts/_layoutForm.scss */
+.layout__content--form p {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 
-/* line 13, ../sass/layouts/_layoutForm.scss */
+/* line 18, ../sass/layouts/_layoutForm.scss */
 .layout--form {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 /* line 1, ../sass/layouts/_layoutHero.scss */
 .layout--hero {
-  height: 60%;
-  background-image: url("../img/hero.jpg?v=5");
+  background-image: url("../img/hero.jpg?v=6");
   background-size: cover;
+  height: 50%;
+}
+@media all and (min-width: 30em) {
+  /* line 1, ../sass/layouts/_layoutHero.scss */
+  .layout--hero {
+    height: 60%;
+  }
 }
 
-/* line 10, ../sass/layouts/_layoutHero.scss */
+/* line 13, ../sass/layouts/_layoutHero.scss */
 .layout__content--hero {
   height: 100%;
   display: table;
@@ -2173,13 +2184,13 @@ code {
   margin-right: 1%;
 }
 
-/* line 16, ../sass/layouts/_layoutHero.scss */
+/* line 19, ../sass/layouts/_layoutHero.scss */
 .hero__content {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 21, ../sass/layouts/_layoutHero.scss */
+/* line 24, ../sass/layouts/_layoutHero.scss */
 .hero__title {
   font-size: 1.75em;
   line-height: 1.71429em;
@@ -2190,7 +2201,7 @@ code {
   color: white;
 }
 @media all and (min-width: 30em) {
-  /* line 21, ../sass/layouts/_layoutHero.scss */
+  /* line 24, ../sass/layouts/_layoutHero.scss */
   .hero__title {
     margin-bottom: 18px;
     font-size: 4.125em;
@@ -2198,7 +2209,7 @@ code {
   }
 }
 
-/* line 36, ../sass/layouts/_layoutHero.scss */
+/* line 39, ../sass/layouts/_layoutHero.scss */
 .hero__subtitle {
   font-size: 1.125em;
   line-height: 1.33333em;
@@ -2208,14 +2219,14 @@ code {
   color: white;
 }
 @media all and (min-width: 30em) {
-  /* line 36, ../sass/layouts/_layoutHero.scss */
+  /* line 39, ../sass/layouts/_layoutHero.scss */
   .hero__subtitle {
     font-size: 2em;
     line-height: 1.5em;
   }
 }
 
-/* line 48, ../sass/layouts/_layoutHero.scss */
+/* line 51, ../sass/layouts/_layoutHero.scss */
 .title--companies {
   font-size: 28px !important;
   margin-bottom: 18px !important;
@@ -2447,10 +2458,6 @@ code {
   line-height: 30px;
 }
 
-/* line 60, ../sass/partials/_content.scss */
-.content--fastlane-features {
-  padding-top: 24px;
-}
 @media all and (min-width: 30em) {
   /* line 60, ../sass/partials/_content.scss */
   .content--fastlane-features {
@@ -2521,12 +2528,18 @@ input {
 /* line 24, ../sass/partials/_form.scss */
 input[type="submit"] {
   background-color: #29C590;
-  width: 30%;
+  width: 40%;
   border: 2px solid rgba(0, 0, 0, 0.05);
   color: white;
   font-weight: 600;
   margin-bottom: 4px;
   cursor: pointer;
+}
+@media all and (min-width: 30em) {
+  /* line 24, ../sass/partials/_form.scss */
+  input[type="submit"] {
+    width: 30%;
+  }
 }
 
 /* line 1, ../sass/partials/_shared.scss */
